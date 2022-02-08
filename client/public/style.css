@@ -1,0 +1,139 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   /*font-size: 62.5%; /* 16px * 62.5% == 10px == 1rem */
+   font-size: 1.5vh; /* 16px * 62.5% == 10px == 1rem */
+}
+
+body {
+   font: 1.6rem Helvetica, Arial;
+}
+
+.flex-container {
+   display: flex;
+   height: 100vh;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+header {
+   flex-basis: 15vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #000000;
+   color: #505050;
+}
+
+main {
+   position: relative;
+   flex-basis: 70vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   background-color: #303030;
+   color: #ffffff;
+   text-align: center;
+}
+
+main>p {
+   /* margin: 1rem 0; */
+   font-size: 2.5rem;
+   color: #909090;
+}
+
+footer {
+   flex-basis: 15vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #000000;
+   color: #505050;
+   line-height: 3rem;
+   font-size: 2rem;
+}
+
+label {
+   /* margin: 1rem 0; */
+   font-size: 2.5rem;
+   color: #bd7b00;
+}
+
+input[type="text"] {
+   border: 0.3rem #000000 solid;
+   border-radius: 1rem;
+   font-family: 'Trebuchet MS', monospace;
+   font-size: 3rem;
+   padding: 0.5rem 1rem;
+   text-align: center;
+}
+input[type="text"]::placeholder {
+   color: #d0d0d0;
+}
+
+input:focus {
+   outline: none;
+}
+
+#number-rus1 {
+   border-radius: 1rem 0 0 1rem;
+   text-align: left;
+}
+
+#number-rus2 {
+   border-left: none;
+   border-radius: 0 1rem 1rem 0;
+}
+
+input[type="button"] {
+   font-size: 3rem;
+   margin: 2rem 0;
+   /* padding: 1rem 2rem; */
+   height: 5rem;
+   width: 20rem;
+   box-sizing: border-box;
+   border: 0.3rem #bd7b00 solid;
+   border-radius: 3rem;
+   background-color: #303030;
+   color: #bd7b00;
+}
+
+input[type="button"]:active {
+   background-color: #bd7b00;
+   color: #303030;
+}
+
+input[type="button"]:hover {
+   cursor: pointer;
+}
+
+.resultScreen {
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   height: 65vh;
+   width: 100vw;
+   border-radius: 2rem;
+   padding: 2rem;
+   background: #000000;
+   color: #505050;
+   font-size: 2.5rem;
+}
+
+.resultScreen p {
+   margin: 2rem 0;
+}
+
+.resultScreen p:first-child {
+   color:#bd7b00;
+   font-size: 3rem;
+   font-weight: bold;
+}

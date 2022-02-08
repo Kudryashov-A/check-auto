@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Проверка авто</title>
+</head>
+<body>
+   <div class="flex-container">
+      <header>
+         <h1>CHECK AUTO</h1>
+      </header>
+      <main>
+         <p>Введите гос.номер <br> автомобиля для проверки</p>
+         <label for="number-rus1">российский
+         <div class="input-rus">
+            <input type="text" id="number-rus1" placeholder="A777AA" size="6" oninput="changeInputRus1()"><!-- 
+            --><input type="text" id="number-rus2" placeholder="777" size="3" oninput="changeInputRus2()">
+         </div>
+         </label>
+         <p>или</p>
+         <label for="number-foreign">иностранный
+            <div>
+               <input type="text" id="number-foreign" placeholder="XXXXXXXXX" size="12" oninput="changeInputEng()">
+            </div>
+         </label>
+         <input type="button" onclick="checkResult(one)" value="Проверить">
+      </main>
+      <footer>
+         <p>&copy; 2021 Andrey Kudryashov</p>
+         <p>All rights reserved</p>
+      </footer>
+   </div>
+   <script type="text/javascript" src="data.js"></script>
+   <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
